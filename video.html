@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nord | YouTube Videos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* General Body Styles */
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+        }
+
+        /* Styles for the main gallery page container */
+        .gallery-page {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .gallery-page h1 {
+            text-align: center;
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        .gallery-description {
+            text-align: center;
+            color: #aaa;
+            margin-bottom: 50px;
+            font-size: 1.1rem;
+        }
+
+        .back-to-home {
+            display: inline-block;
+            margin-bottom: 30px;
+            color: #00aaff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s ease;
+        }
+
+        .back-to-home:hover {
+            color: #0077cc;
+        }
+
+        /* Styles for the grid layout */
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery-item {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Styles for Embedded YouTube Videos */
+        .youtube-video {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+        }
+
+        .youtube-video iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+        
+        /* NEW: Styles for the View More button container */
+        .view-more-container {
+            text-align: center;
+            margin-top: 50px; /* Adds space above the button */
+        }
+        
+        /* NEW: Styles for the View More button */
+        .view-more-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #00aaff;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .view-more-btn:hover {
+            background-color: #0077cc;
+            transform: scale(1.05); /* Slightly enlarges the button on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery-page">
+        <a href="index.html" class="back-to-home">&larr; Back to Home</a>
+        <h1>YouTube Videos</h1>
+        <p class="gallery-description">A collection of embedded videos from YouTube.</p>
+        
+        <div class="gallery-container">
+            <div class="gallery-item youtube-video">
+                <iframe src="https://www.youtube.com/embed/v_d8RX1BSwY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <div class="gallery-item youtube-video">
+                <iframe src="https://www.youtube.com/embed/cSemrQjQmkY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <div class="gallery-item youtube-video">
+                <iframe src="https://www.youtube.com/embed/j1ZjWPsgd1E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            
+            <div class="gallery-item youtube-video">
+                <iframe src="https://www.youtube.com/embed/G2FHLMsWg4k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            
+            <div class="gallery-item youtube-video">
+                <iframe src="https://www.youtube.com/embed/GOKZtkEKJrw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div class="view-more-container">
+            <a href="https://ytjobs.co/talent/profile/220155?r=761&utm_campaign=share-profile&utm_ref=talent&fbclid=PAVERFWAMznKRleHRuA2FlbQIxMAABpyJNoHAWYC7xe8zszN5QG4uHup8m4ZDKK2Zc76GzElmIU55n-RIlYniIvCwA_aem_6tifPiV5_G_agj5K4QBBzg" class="view-more-btn" target="_blank">View More</a>
+        </div>
+        
+    </div>
+</body>
+</html>
